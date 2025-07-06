@@ -53,7 +53,7 @@ const changeDirection = (evt) => {
 
 controls.forEach(key => {
     // calling changeDirection on each key click and passing key dataset value as an object
-    key.addEventListener('click', () => changeDirection({ key: key.CDATA_SECTION_NODE.key}));
+    key.addEventListener('click', () => changeDirection({ key: key.dataset.key}));
 });
 
 const initGame = (evt) => {

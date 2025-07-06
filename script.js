@@ -31,6 +31,7 @@ const handleGameOver = () => {
     gameOver = false;
     gameOverPopup.classList.add('popup_active');
     overlay.classList.add('overlay_active');
+    newGameButton.focus(); 
 }
 
 const changeDirection = (evt) => {
